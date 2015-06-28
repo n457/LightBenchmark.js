@@ -9,7 +9,7 @@ A **simple** and lightweight **timer in native JavaScript**. Useful for **benchm
 ### Usage
 
 LightTimer.js is written in native JavaScript, so it **doesn't need any dependency**.
-Just include [lighttimer.js](lighttimer.js) or [lighttimer.min.js](lighttimer.min.js) in `<header></header>` **or just before** `</body>` (**recommended**).
+Just include [lighttimer.js](lighttimer.js) or [lighttimer.min.js](lighttimer.min.js) in `<head></head>` **or just before** `</body>` (**recommended**).
 
 ```html
   <script src="/your-custom-path/lighttimer.min.js"></script>
