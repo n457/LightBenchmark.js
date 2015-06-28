@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LightTimer.js playground</title>
+  </head>
+  <body>
+
+    <ul>
+      <li id="one"></li>
+      <li class="a-li"></li>
+      <li data-li="true"></li>
+    </ul>
+
+
+    <script src="../lighttimer.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        'use strict';
+
+        var lis = document.querySelectorAll('li');
+
+        lighttimer({name: 'lis debug', loops: 'low'}, function (ltIncrement, ltOptions) {
+          if (ltIncrement === 0) {
+            console.log(ltOptions);
+          }
+          console.log(lis);
+        });
+
+        lighttimer({name: 'lis debug 2'}, function (ltIncrement, ltOptions) {
+          if (ltIncrement === 0) {
+            console.log(ltOptions);
+          }
+          console.log(lis[0].getAttribute('id') );
+        });
+
+      });
+    </script>
+  </body>
+</html>
