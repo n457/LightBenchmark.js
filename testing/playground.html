@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>LightTimer.js playground</title>
+    <title>LightBenchmark.js playground</title>
   </head>
   <body>
 
@@ -13,23 +13,23 @@
     </ul>
 
 
-    <script src="../lighttimer.js"></script>
+    <script src="../lightbenchmark.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         'use strict';
 
         var lis = document.querySelectorAll('li');
 
-        lighttimer({name: 'lis debug', loops: 'low'}, function (ltIncrement, ltOptions) {
-          if (ltIncrement === 0) {
-            console.log(ltOptions);
+        lightbenchmark({name: 'lis debug', loops: 'low'}, function (lbIncrement, lbOptions) {
+          if (lbIncrement === 0) {
+            console.log(lbOptions);
           }
           console.log(lis);
         });
 
-        lighttimer({name: 'lis debug 2'}, function (ltIncrement, ltOptions) {
-          if (ltIncrement === 0) {
-            console.log(ltOptions);
+        lightbenchmark({name: 'lis debug 2'}, function (lbIncrement, lbOptions) {
+          if (lbIncrement === 0) {
+            console.log(lbOptions);
           }
           console.log(lis[0].getAttribute('id') );
         });

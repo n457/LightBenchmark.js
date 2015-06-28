@@ -1,4 +1,4 @@
-// LightTimer.js - A simple and lightweight timer in native JavaScript. Useful for benchmarks.
+// LightBenchmark.js - A simple and lightweight benchmark tool in native JavaScript.
 // Version 1.0
 // MIT License
 // Copyright (c) 2015 Bertrand Vignaud-Lerouge / n457 - https://github.com/n457
@@ -6,7 +6,7 @@
 
 // options : object
 // callback : function
-function lighttimer(options, callback, scope) {
+function lightbenchmark(options, callback, scope) {
 
   'use strict';
 

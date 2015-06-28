@@ -1,6 +1,6 @@
-# LightTimer.js
+# LightBenchmark.js
 
-A **simple** and lightweight **timer in native JavaScript**. Useful for **benchmarks**.
+A **simple** and lightweight **benchmark tool in native JavaScript**.
 
 ![](doc/assets/screenshot.png)
 
@@ -8,24 +8,24 @@ A **simple** and lightweight **timer in native JavaScript**. Useful for **benchm
 
 ### Usage
 
-LightTimer.js is written in native JavaScript, so it **doesn't need any dependency**.
-Just include [lighttimer.js](lighttimer.js) or [lighttimer.min.js](lighttimer.min.js) in `<head></head>` **or just before** `</body>` (**recommended**).
+LightBenchmark.js is written in native JavaScript, so it **doesn't need any dependency**.
+Just include [lightbenchmark.js](lightbenchmark.js) or [lightbenchmark.min.js](lightbenchmark.min.js) in `<head></head>` **or just before** `</body>` (**recommended**).
 
 ```html
-  <script src="/your-custom-path/lighttimer.min.js"></script>
+  <script src="/your-custom-path/lightbenchmark.min.js"></script>
   <script src="/another-path/your-script.js"></script>
 </body>
 ```
 
 
 
-Then, you can call the **lighttimer function** in different ways.
+Then, you can call the **lightbenchmark function** in different ways.
 
 The **most complete and useful way** is :
 
 ```javascript
 var options = {name: 'name of the timer', loops: 'default'};
-lighttimer(options, function (ltIncrement, ltOptions) {
+lightbenchmark(options, function (lbIncrement, lbOptions) {
   // Your instructions.
 });
 ```
@@ -42,21 +42,21 @@ You don't necessarily have to specify `name` or `loops`, but they will be **repl
 
 
 
-You can also access some **additional datas** by specify them as **arguments** of the function you give to lighttimer(). **You can give them the names you want** :
+You can also access some **additional datas** by specify them as **arguments** of the function you give to lightbenchmark(). **You can give them the names you want** :
 
 ```javascript
-lighttimer({}, function (ltIncrement, ltOptions) {});
+lightbenchmark({}, function (lbIncrement, lbOptions) {});
 ```
 
-* `ltIncrement` : increment variable.
-* `ltOptions` : options you gave, composed of `ltOptions.name` and `ltOptions.loops`.
+* `lbIncrement` : increment variable.
+* `lbOptions` : options you gave, composed of `lbOptions.name` and `lbOptions.loops`.
 
 
 
-So, the **minimal way** to call lighttimer() is :
+So, the **minimal way** to call lightbenchmark() is :
 
 ```javascript
-lighttimer({}, function () {
+lightbenchmark({}, function () {
   // Your instructions.
 });
 ```
@@ -69,11 +69,11 @@ lighttimer({}, function () {
 
 * **The execution time may vary** depending on the **computer** and the **browser** used.
 
-* If you like LightTimer.js, please ![](doc/assets/star-repo.png) this repository so it can **easily be found** and **help other developers**.
+* If you like LightBenchmark.js, please ![](doc/assets/star-repo.png) this repository so it can **easily be found** and **help other developers**.
 
 **Thank you !** :wink:
 
 
 
 ### License
-LightTimer.js is released under the [MIT License](LICENSE).
+LightBenchmark.js is released under the [MIT License](LICENSE).
