@@ -66,6 +66,8 @@ lightbenchmark(function () {
 
 ### Notes
 
+* See [testing/playground.html](testing/playground.html) for some examples.
+
 * More the `loops` value is **high**, more the results will be **precise and accurate**.
 
 * **The execution time may vary** depending on the **computer** and the **browser** used.
@@ -77,4 +79,5 @@ lightbenchmark(function () {
 
 
 ### License
+
 LightBenchmark.js is released under the [MIT License](LICENSE).
