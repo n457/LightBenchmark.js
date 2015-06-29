@@ -1,4 +1,5 @@
 # LightBenchmark.js
+#### v.1.0.1
 
 A **simple** and lightweight **benchmark tool in native JavaScript**.
 
@@ -32,7 +33,7 @@ lightbenchmark(options, function (lbIncrement, lbOptions) {
 
 `name` must be a `string`. Default value : `'Default'`.
 
-`loops` must be a `integer` or a **predefined value** :
+`loops` must be a `integer` or a **predefined** `string` :
 
 * `'low'` : `1000` loops.
 * `'default'` : `10000` loops. **Default value**.
@@ -45,7 +46,7 @@ You don't necessarily have to specify `name` or `loops`, but they will be **repl
 You can also access some **additional datas** by specify them as **arguments** of the function you give to lightbenchmark(). **You can give them the names you want** :
 
 ```javascript
-lightbenchmark({}, function (lbIncrement, lbOptions) {});
+lightbenchmark(function (lbIncrement, lbOptions) {});
 ```
 
 * `lbIncrement` : increment variable.
@@ -56,7 +57,7 @@ lightbenchmark({}, function (lbIncrement, lbOptions) {});
 So, the **minimal way** to call lightbenchmark() is :
 
 ```javascript
-lightbenchmark({}, function () {
+lightbenchmark(function () {
   // Your instructions.
 });
 ```
